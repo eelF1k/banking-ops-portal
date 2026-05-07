@@ -1,31 +1,31 @@
 # Banking Ops Portal
 
-Internal banking operations portal (fullstack pet project) focused on secure workflows:
-- request lifecycle
-- approvals by role
-- audit trail
+Внутрішній портал банківських операцій (fullstack pet-проєкт), сфокусований на безпечних робочих процесах:
+- життєвий цикл заявок
+- погодження за ролями
+- аудит дій
 - JWT + OAuth2
-- Redis cache/rate limit
-- Docker + GitLab CI style pipeline
+- кеш і rate limiting через Redis
+- Docker + pipeline у стилі GitLab CI
 
-## Tech stack
+## Технологічний стек
 - Backend: FastAPI
 - Frontend: React + TypeScript
-- DB: PostgreSQL
-- Cache/Broker: Redis
-- Infra: Docker Compose, GitLab CI config
+- БД: PostgreSQL
+- Кеш/брокер: Redis
+- Інфраструктура: Docker Compose, конфігурація GitLab CI
 
-## Commit roadmap (0 -> N)
-0. Init repo structure
-1. Backend scaffold + dependencies
-2. Auth (JWT + RBAC)
-3. Operations domain models
-4. Request workflow API
-5. Audit log + security middleware
-6. Redis cache + rate limiting
-7. Frontend scaffold
-8. Frontend auth + request boards
-9. Docker compose full stack
-10. Tests + CI (GitHub Actions + gitlab-ci.yml)
-11. Docs polish + runbook
+## Roadmap комітів (0 -> N)
+0. Ініціалізація структури репозиторію
+1. Каркас бекенду + залежності
+2. Авторизація (JWT + RBAC)
+3. Доменні моделі операцій
+4. API workflow для заявок
+5. Аудит-лог + security middleware
+6. Redis-кеш + обмеження частоти запитів
+7. Каркас фронтенду
+8. Авторизація на фронтенді + дошки заявок
+9. Повний Docker Compose стек
+10. Тести + CI (GitHub Actions + gitlab-ci.yml)
+11. Полірування документації + runbook
 
